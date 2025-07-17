@@ -2,70 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vijaya Lakshmi | Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style.css">
-  <script src="theme.js" defer></script>
-  <section id="resume" class="container">
-  <a href="resume.pdf" download class="btn">Download Resume (PDF)</a>
-</section>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijaya Lakshmi | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Vijaya Lakshmi Chintapalli</h1>
-      <p>Full Stack Software Engineer | Java • React • Spring Boot • Django</p>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <section id="resume" class="container" style="text-align: center; margin-top: 1.5rem;">
+    <a href="resume.pdf" download class="btn">📄 Download Resume (PDF)</a>
+    </section>
+
+    <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
+    <nav class="navbar">
+      <div class="logo">Vijaya Lakshmi</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a passionate Full Stack Developer with expertise in Java, Spring Boot, Django, and React. I enjoy building robust and scalable applications that solve real-world problems. Currently pursuing my Master's in Computer Science at Youngstown State University, and always exploring emerging technologies like Generative AI and Cloud Development.</p>
-    </div>
-  </section>
+ 
+  <section id="about" class="container">
+  <h2>About Me</h2>
+  <p>
+    I'm <strong>Vijaya Lakshmi Chintapalli</strong>, a passionate Full Stack Developer with experience in Java, Spring Boot, Django, and React.
+    I specialize in building scalable, secure web applications and love combining backend logic with sleek UI.
+  </p>
+  <p>
+    I recently completed my <strong>Master’s in Computer Science</strong> from <strong>Youngstown State University</strong> with a <strong>GPA of 3.9</strong>. During this time, I deepened my expertise in software development, cloud technologies, and AI-powered systems.
+  </p>
+  <p>
+    My goal is to solve real-world problems using efficient, maintainable code, while constantly learning and adapting to emerging technologies in full-stack development, machine learning, and DevOps.
+  </p>
+</section>
+
 
   <section id="projects" class="container">
   <h2>Projects</h2>
 
   <div class="project">
-    <h3>Medicare Appointment Booking System</h3>
+    <h3>🩺 Medicare Appointment Booking System</h3>
     <p><strong>Tech:</strong> Django, Bootstrap, SQLite</p>
-    <p>Developed a full-stack healthcare platform with role-based dashboards for patients and doctors. Features include appointment booking, editing, approval system, and dynamic specialty filtering.</p>
+    <p>Full-stack healthcare system with doctor-patient role dashboards, dynamic specialty filtering, and appointment approvals.</p>
     <a href="https://medicareapp-1-qs13.onrender.com/" target="_blank">Live Demo</a> |
     <a href="https://github.com/vijaya-chintapalli/MedicareApp" target="_blank">GitHub</a>
   </div>
 
   <div class="project">
-    <h3>Sudoku Solver with GUI</h3>
+    <h3>🧠 AI-Powered Resume Analyzer</h3>
+    <p><strong>Tech:</strong> Python, Flask, OpenAI API</p>
+    <p>Uses LLMs to analyze resumes and match job descriptions with NLP-driven suggestions. (Coming Soon)</p>
+  </div>
+
+  <div class="project">
+    <h3>🧮 Sudoku Solver with GUI</h3>
     <p><strong>Tech:</strong> Java, Swing</p>
-    <p>Built a Java-based Sudoku solver with real-time validation, hint generation, and backtracking logic. Provides a user-friendly interface with step-by-step solving.</p>
+    <p>Solves puzzles using backtracking and includes real-time validation and hint generation.</p>
     <a href="https://github.com/vijaya-chintapalli/Sudoku-Solver" target="_blank">GitHub</a>
   </div>
 
   <div class="project">
-    <h3>Personal Portfolio Website</h3>
+    <h3>🌐 Personal Portfolio Website</h3>
     <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-    <p>Designed and developed this personal portfolio to showcase skills, certifications, and projects in a responsive format using modern web design principles.</p>
+    <p>This portfolio site showcasing projects, skills, and certifications.</p>
     <a href="#">You're viewing it!</a>
   </div>
-
-  <div class="project">
-    <h3>AI-Powered Resume Analyzer</h3>
-    <p><strong>Tech:</strong> Python, Flask, OpenAI API</p>
-    <p>A tool to analyze resumes and job descriptions using NLP and suggest tailored improvements to increase hiring chances. Integrates LLMs for keyword and tone analysis.</p>
-    <a href="#">Coming Soon</a>
-  </div>
 </section>
+
 
 <section id="skills" class="container">
   <h2>Skills</h2>
@@ -73,14 +82,13 @@
     <li><strong>Languages:</strong> Java, Python, C, C++, JavaScript</li>
     <li><strong>Frontend:</strong> HTML, CSS, React.js, Flutter</li>
     <li><strong>Backend:</strong> Java (Spring Boot), Python (Django/Flask), Node.js</li>
-    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Data Structures</li>
-    <li><strong>Tools:</strong> VS Code, Eclipse, Postman, Jupyter Notebook, Git, Docker, AWS (basic), Jira</li>
-    <li><strong>AI & Machine Learning:</strong> Scikit-learn, TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, 
-Natural Language Processing (NLP), Generative AI (LLMs), Prompt Engineering, Responsible AI</li>
-    <li><strong>Databases:</strong> SQL,MySQL,PostgreSQL,MongoDB,NoSQL, Data Science</li>
-    <li><strong>Others:</strong> Algorithms, OOP, CI/CD, Agile, Software Development Life Cycle (SDLC)</li>
+    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, NoSQL</li>
+    <li><strong>Tools:</strong> VS Code, Eclipse, Postman, Docker, Git, AWS, Jira</li>
+    <li><strong>AI & ML:</strong> Scikit-learn, TensorFlow, NLP, Generative AI (LLMs),Responsible AI, /li>
+    <li><strong>Others:</strong> OOP, CI/CD, Agile, SDLC, Data Structures, Algorithms</li>
   </ul>
 </section>
+
 
 
 <section id="experience" class="container">
@@ -169,9 +177,25 @@ Natural Language Processing (NLP), Generative AI (LLMs), Prompt Engineering, Res
   <p>GitHub: <a href="#">https://github.com/vijaya-chintapalli</a></p>
   <p>LeetCode: <a href="#">https://leetcode.com/u/Vijaya-06/</a></p>
   <p>HackerRank: <a href="#">https://www.hackerrank.com/profile/chintapallivija1</a></p>
+  <p>HackerRank: <a href="#">https://www.hackerrank.com/profile/chintapallivija1</a></p>
   <p>TechGig: <a href="#">https://www.techgig.com/myprofile</a></p>  
   <p>Phone: (724) 202-4902</p>
 </section>
+
+<section id="contact" class="container">
+  <h2>Contact</h2>
+
+  <ul class="contact-list">
+    <li><i class="fas fa-envelope"></i> <a href="mailto:chintapallivijayalakshmi06@gmail.com">Email</a></li>
+    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vijaya-lakshmi-chintapalli-475252217/" target="_blank">LinkedIn</a></li>
+    <li><i class="fab fa-github"></i> <a href="https://github.com/vijaya-chintapalli" target="_blank">GitHub</a></li>
+    <li><i class="fas fa-code"></i> <a href="https://leetcode.com/u/Vijaya-06/" target="_blank">LeetCode</a></li>
+    <li><i class="fab fa-hackerrank"></i> <a href="https://www.hackerrank.com/profile/chintapallivija1" target="_blank">HackerRank</a></li>
+    <li><i class="fab fa-TechGig"></i> <a href="https://www.techgig.com/myprofile" target="_blank">TechGig</a></li>
+    <li><i class="fas fa-phone"></i> (724) 202-4902</li>
+  </ul>
+</section>
+
 
 <footer>
   <div class="container">
