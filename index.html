@@ -1,206 +1,504 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vijaya Lakshmi | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijaya Lakshmi Chintapalli | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <section id="resume" class="container" style="text-align: center; margin-top: 1.5rem;">
-    <a href="resume.pdf" download class="btn">📄 Download Resume (PDF)</a>
+<!-- Navbar -->
+ <nav class="navbar">
+  <div class="logo">Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="Resume.pdf" class="resume-btn" download>Resume</a></li>
+  </ul>
+</nav>
+
+
+
+
+<!-- Hero Section -->
+ <section  class="section hero" id="hero">
+  <div class="about-content centered">
+    <div class="profile-photo">
+  <img src="images/Img.jpeg" alt="My Photo">
+</div>
+  <div class="about-text">
+  <h1 class="name-highlight">Vijaya Lakshmi Chintapalli</h1>
+    <h3>Frontend | Backend | Full Stack Software Engineer | AI Enthusiast</h3>
+    <p>Passionate about solving real-world problems with scalable full stack solutions across the web.</p>
+   </div>
+ </div>
+ </section>
+</body>
+
+<main>
+    <!-- About Section -->
+
+    <section class="section about" id="about">
+    <h2 >About Me</h2>
+    <div class="about-cards"></div>
+    <p>
+        I am a dedicated Software Engineer with a strong foundation in both frontend and backend development. As a Master’s graduate in Computer Science, I am experienced in building scalable, secure, and user-focused web applications using technologies like React.js, Java (Spring Boot), Python (Django/Flask), and modern databases.
+    </p>
+    <p>
+        With hands-on experience in full-stack development, deployment automation, and Agile workflows, I’m passionate about writing clean, efficient code and solving complex problems. I take pride in collaborating effectively with teams and mentoring peers to deliver high-quality software solutions.
+    </p>
+    <p>
+        Driven by continuous learning and a commitment to excellence, I look forward to contributing my skills and growing as part of innovative engineering teams.
+    </p>
+    </div>
     </section>
 
-    <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
-    <nav class="navbar">
-      <div class="logo">Vijaya Lakshmi</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
- 
-  <section id="about" class="container">
-  <h2>About Me</h2>
-  <p>
-    I'm <strong>Vijaya Lakshmi Chintapalli</strong>, a passionate Full Stack Developer with experience in Java, Spring Boot, Django, and React.
-    I specialize in building scalable, secure web applications and love combining backend logic with sleek UI.
-  </p>
-  <p>
-    I recently completed my <strong>Master’s in Computer Science</strong> from <strong>Youngstown State University</strong> with a <strong>GPA of 3.9</strong>. During this time, I deepened my expertise in software development, cloud technologies, and AI-powered systems.
-  </p>
-  <p>
-    My goal is to solve real-world problems using efficient, maintainable code, while constantly learning and adapting to emerging technologies in full-stack development, machine learning, and DevOps.
-  </p>
-</section>
+    <!-- Education -->
+    <section class="section education" id="education">
+    <h2>Education</h2>
+    <div class="education-cards">
+        <div class="education-card">
+        <h3>Master's in Computer Science</h3>
+        <p><span class="school">Youngstown State University</span><br>
+            Youngstown, OH <span class="years">(Aug 2023 - Dec 2024)</span>
+        </p>
+        <p class="edu-grade">GPA: 3.9 / 4.0</p>
+        </div>
+        <div class="education-card">
+        <h3>Bachelor's in Computer Science</h3>
+        <p><span class="school">Prakasam Engineering College</span><br>
+            Andhra Pradesh, India <span class="years">(Jun 2017 - Jun 2021)</span>
+        </p>
+        <p class="edu-grade">GPA: 3.8 / 4.0</p>
+        </div>
+    </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-cards">            
+        <div class="experience-card">        
+            <h3>Full Stack Software Engineer</h3> 
+            <p><strong>Crestsoft Inc</strong>&nbsp;|&nbsp; Jan 2025 — Present</p>
+            <ul>
+                  <li>Developed and enhanced full-stack web applications using React.js, Spring Boot.</li>
 
-  <section id="projects" class="container">
-  <h2>Projects</h2>
+                  <li>Collaborated with the data science team to deploy ML models to production using Flask REST APIs, monitored performance, and handled versioning.</li>
 
-  <div class="project">
-    <h3>🩺 Medicare Appointment Booking System</h3>
-    <p><strong>Tech:</strong> Django, Bootstrap, SQLite</p>
-    <p>Full-stack healthcare system with doctor-patient role dashboards, dynamic specialty filtering, and appointment approvals.</p>
-    <a href="https://medicareapp-1-qs13.onrender.com/" target="_blank">Live Demo</a> |
-    <a href="https://github.com/vijaya-chintapalli/MedicareApp" target="_blank">GitHub</a>
-  </div>
+                  <li>Built AI-powered features (e.g., chatbots, intelligent search) using spaCy, scikit-learn, and integrated them into web UIs.</li>
 
-  <div class="project">
-    <h3>🧠 AI-Powered Resume Analyzer</h3>
-    <p><strong>Tech:</strong> Python, Flask, OpenAI API</p>
-    <p>Uses LLMs to analyze resumes and match job descriptions with NLP-driven suggestions. (Coming Soon)</p>
-  </div>
+                  <li>Designed and documented RESTful APIs and handled secure data flow using MySQL and PostgreSQL.</li>
 
-  <div class="project">
-    <h3>🧮 Sudoku Solver with GUI</h3>
-    <p><strong>Tech:</strong> Java, Swing</p>
-    <p>Solves puzzles using backtracking and includes real-time validation and hint generation.</p>
-    <a href="https://github.com/vijaya-chintapalli/Sudoku-Solver" target="_blank">GitHub</a>
-  </div>
+                  <li>Automated deployment processes using Docker and Linux, contributing to CI/CD workflows in Agile sprints.</li>
 
-  <div class="project">
-    <h3>🌐 Personal Portfolio Website</h3>
-    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-    <p>This portfolio site showcasing projects, skills, and certifications.</p>
-    <a href="#">You're viewing it!</a>
-  </div>
-</section>
+                  <li>Integrated monitoring and error handling on Linux production servers, ensuring high availability.</li>
 
+                  <li>Followed Agile methodologies for sprint planning, daily stand-ups, and team retrospectives.</li>
+            </ul>
+        </div>
+      
+        <div class="experience-card">
+            <h3>IT Intern</h3>
+            <p><strong>Crestsoft Inc</strong> &nbsp;|&nbsp; Sep 2024 – Dec 2024</p>
+            <ul>
+                <li>Supported front-end development using HTML, CSS, JavaScript, and React.js components.</li>
+                <li>Participated in backend API development with Java (Spring Boot) and Python (Flask/Django).</li>
+                <li>Managed and queried relational databases (MySQL) to support CRUD operations and reporting dashboards.</li>
+                <li>Collaborated with QA to resolve bugs using Git, followed Agile practices, and documented development progress.</li>
+                <li>Contributed to basic deployment setup using Docker and Linux.</li>
+            </ul>
+        </div>
+      
+        <div class="experience-card"> 
+            <h3>Software Engineer</h3>
+            <p><strong>Mphasis</strong> &nbsp;|&nbsp; July 2021 – July 2023</p>
+            <ul>
+                <li>Designed and implemented secure, scalable backend services using Java (Spring Boot) and Node.js (Express.js).</li>
+                <li>Developed responsive and user-friendly interfaces using React.js and modern web standards, optimized for performance.</li>
+                <li>Handled production data and built queries across SQL (PostgreSQL) and NoSQL (MongoDB) environments.</li>
+                <li>Integrated REST APIs with JWT/OAuth2 authentication and ensured compliance with banking data regulations.</li>
+                <li>Built and deployed services via CI/CD pipelines using Jenkins, managed containers using Docker, and performed troubleshooting on Linux servers.</li>
+                <li>Worked with cross-functional teams using Agile/Scrum, and participated in sprint demos, reviews, and code reviews.</li>
+            </ul>
+        </div>
 
-<section id="skills" class="container">
-  <h2>Skills</h2>
-  <ul class="skills-list">
-    <li><strong>Languages:</strong> Java, Python, C, C++, JavaScript</li>
-    <li><strong>Frontend:</strong> HTML, CSS, React.js, Flutter</li>
-    <li><strong>Backend:</strong> Java (Spring Boot), Python (Django/Flask), Node.js</li>
-    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, NoSQL</li>
-    <li><strong>Tools:</strong> VS Code, Eclipse, Postman, Docker, Git, AWS, Jira</li>
-    <li><strong>AI & ML:</strong> Scikit-learn, TensorFlow, NLP, Generative AI (LLMs),Responsible AI, /li>
-    <li><strong>Others:</strong> OOP, CI/CD, Agile, SDLC, Data Structures, Algorithms</li>
-  </ul>
-</section>
+        <div class="experience-card">
+            <h3>Developer and Testing Trainee</h3>
+            <p><strong>Qspiders</strong> &nbsp;|&nbsp; May 2021 – July 2021</p>
+            <ul>
+                <li>Built UI components using JavaScript, React.js, and basic Flutter for practice projects.</li>
+                <li>Wrote unit and integration test cases for APIs and UI components using Postman and manual testing techniques.</li>
+                <li>Wrote SQL queries to validate data and debug backend services.</li>
+                <li>Learnt SDLC concepts, practiced Agile workflows, and used Git for version control.</li>
+            </ul>
+        </div>
 
+    </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-cards">
 
-<section id="experience" class="container">
-  <h2>Experience</h2>
+        <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+        </ul>
+        </div>
 
-  <div class="job">
-    <h3>Full Stack Software Engineer – Crestsoft Inc</h3>
-    <p><em>Jan 2025 – Present</em></p>
-    <ul>
-      <li>Developed web applications with React.js, Spring Boot, and Flask</li>
-      <li>Led code reviews, mentored interns, and implemented secure REST APIs</li>
+        <div class="skill-card">
+        <h3>Frontend Technologies</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Flutter (cross-platform)</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>Backend Technologies</h3>
+        <ul>
+            <li>Java (Spring Boot)</li>
+            <li>Python (Django/Flask)</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>Databases</h3>
+        <ul>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>NoSQL</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>AI & Machine Learning</h3>
+        <ul>
+            <li>scikit-learn</li>
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>OpenCV</li>
+            <li>NumPy, Pandas, Matplotlib</li>
+            <li>NLP, LLMs, Prompt Engineering</li>
+            <li>Responsible AI</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>Deployment & DevOps</h3>
+        <ul>
+            <li>Linux</li>
+            <li>Docker</li>
+            <li>CI/CD pipelines</li>
+            <li>AWS (basics)</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>Tools & Platforms</h3>
+        <ul>
+            <li>VS Code</li>
+            <li>Eclipse</li>
+            <li>Postman</li>
+            <li>Jupyter Notebook</li>
+            <li>Git</li>
+            <li>Jira</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>Computer Science Fundamentals</h3>
+        <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>Operating Systems</li>
+            <li>Problem Solving</li>
+        </ul>
+        </div>
+
+        <div class="skill-card">
+        <h3>Methodologies</h3>
+        <ul>
+            <li>Agile</li>
+            <li>Scrum</li>
+            <li>Software Development Life Cycle (SDLC)</li>
+        </ul>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Certificates Section -->
+
+    <section class="section certificates" id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-cards">
+        
+        <div class="cert-card">
+        <h3>Cloud Computing 101 – AWS Educate (Mar '25)</h3>
+        <ul>
+            <li>Understood fundamental cloud computing concepts (IaaS, PaaS, SaaS).</li>
+            <li>Learned AWS core services like EC2, S3, Lambda, and RDS.</li>
+            <li>Gained familiarity with cloud architecture, scalability, and global infrastructure.</li>
+        </ul>
+        <a href="https://www.credly.com/badges/71b0f787-a55f-4fd8-88ef-6ea4943a2613/linked_in?t=st0otn" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+        <h3>Generative AI – AWS Educate (Mar '25)</h3>
+        <ul>
+            <li>Gained insights into generative AI concepts and applications (text, image, audio generation).</li>
+            <li>Learned about foundational models and transformers.</li>
+            <li>Understood responsible use of generative AI in AWS ecosystem.</li>
+        </ul>
+        <a href="https://www.credly.com/earner/earned/badge/9f4fcc00-4f1e-43b2-9349-c6f8f0a767c8" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+        <h3>Data Science Methodology – IBM (Jul '20)</h3>
+        <ul>
+            <li>Learned the data science lifecycle: problem definition, data collection, modeling, and evaluation</li>
+            <li>Applied CRISP-DM methodology to real-world case studies</li>
+            <li>Practiced defining business goals and converting them into data-driven solutions</li>
+        </ul>
+        <a href="https://www.coursera.org/account/accomplishments/verify/KCKYLAPBTLJQ" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+        <h3>What is Data Science – IBM &nbsp; | &nbsp; Coursera (May '20)</h3>
+        <ul>
+            <li>Learned core concepts of data science and its real-world applications.</li>
+            <li>Gained exposure to tools like Python, Jupyter, and Watson Studio.</li>
+            <li>Understood the ethical use of data and the role of a data scientist.</li>
+        </ul>
+        <a href="https://www.coursera.org/account/accomplishments/verify/CETAXDGNEAFX?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+        <h3>Python Data Structures – University of Michigan &nbsp; | &nbsp; Coursera (Jul '20)</h3>
+        <ul>
+            <li>Mastered built-in Python data structures: lists, dictionaries, tuples, and sets.</li>
+            <li>Implemented searching, sorting, and data manipulation operations.</li>
+            <li>Developed problem-solving skills using Python's OOP features.</li>
+        </ul>
+        <a href="https://www.coursera.org/account/accomplishments/verify/9LLTZJNUTYZ8" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Programming For Everybody – University of Michigan &nbsp; | &nbsp; Coursera (Jul '20)</h3>
+            <ul>
+                <li>Learned programming basics: variables, conditionals, loops, and functions.</li> 
+                <li>Gained foundational Python skills for software development.</li>
+                <li>Built large-scale programs using procedural logic.</li>
+            </ul>
+            <a href="https://www.coursera.org/account/accomplishments/verify/WE5HMVXBUP26" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Databricks Fundamentals – Databricks Academy (Mar '25 - Mar '26)</h3>
+            <ul>
+                <li>Understood the Databricks Lakehouse architecture and unified analytics.</li> 
+                <li>Worked with notebooks, Delta Lake, and Apache Spark.</li>
+                <li>Gained exposure to collaborative data science workflows.</li>
+            </ul>
+            <a href="https://credentials.databricks.com/0098f5e7-9d3c-4087-877f-53c40d84a45c#acc.6sTNiLkC" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Generative AI Fundamentals – Databricks Academy (Mar '25 - Mar '27)</h3>
+            <ul>
+                <li>Learned core concepts of large language models (LLMs) and their training.</li> 
+                <li>Understood practical uses of generative models in business.</li>
+                <li>Applied LLMs in Databricks notebooks for text-based AI tasks.</li>
+            </ul>
+            <a href="https://credentials.databricks.com/1f830a43-3a73-4388-9b96-46591db5a225#acc.9BRi2cQZ" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        
+        <div class="cert-card">
+            <h3>Prompt Design in Vertex AI – Google Cloud (Mar '25)</h3>
+            <ul>
+                <li>Designed effective prompts for LLMs using Vertex AI Studio.</li> 
+                <li>Understood temperature, max tokens, and role-specific prompting.</li>
+                <li>Applied prompt engineering for various generative AI tasks.</li>
+            </ul>
+            <a href="https://www.credly.com/badges/f350bd59-562c-4077-87f9-7f691dd2952c" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Introduction to Responsible AI – Google Cloud (Mar '25)</h3>
+            <ul>
+                <li>Explored ethical implications of AI deployment.</li> 
+                <li>Learned principles of fairness, transparency, and bias mitigation.</li>
+                <li>Applied responsible AI practices in machine learning pipelines.</li>
+            </ul>
+            <a href="https://www.cloudskillsboost.google/public_profiles/686b4567-7d10-4752-8494-5d8df7b93b41/badges/14336966" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Introduction to Large Language Models – Google Cloud (Mar '25)</h3>
+            <ul>
+                <li>Gained foundational understanding of LLMs and transformers.</li> 
+                <li>Learned use cases of LLMs like summarization, translation, and Q&A.</li>
+                <li>Applied LLMs via APIs in a cloud setting.</li>
+            </ul>
+            <a href="https://www.cloudskillsboost.google/public_profiles/686b4567-7d10-4752-8494-5d8df7b93b41/badges/14337054" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Introduction to Generative AI – Google Cloud (Mar '25)</h3>
+            <ul>
+                <li>Defined the concept of generative AI and how it differs from traditional ML.</li> 
+                <li>Explored popular model types (GANs, VAEs, Transformers).</li>
+                <li>Applied pre-built AI models for content generation.</li>
+            </ul>
+            <a href="https://www.cloudskillsboost.google/public_profiles/686b4567-7d10-4752-8494-5d8df7b93b41/badges/14337271" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Java – HackerRank (Feb '25)</h3>
+            <ul>
+                <li>Proficient in Java programming concepts: OOP, data structures, exception handling.</li> 
+                <li>Implemented coding solutions using Java Collections and Streams.</li>
+                <li>Practiced solving real-world problems in a timed environment</li>
+            </ul>
+            <a href="https://www.hackerrank.com/certificates/8551fe57213a" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Software Engineer – HackerRank (Feb '25)</h3>
+            <ul>
+                <li>Demonstrated full-stack development skills under timed coding challenges.</li> 
+                <li>Solved algorithmic and system design problems efficiently.</li>
+                <li>Showcased readiness for technical software engineering roles.</li>
+            </ul>
+            <a href="https://www.hackerrank.com/certificates/9f93daef6b0e" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>SQL – HackerRank (Feb '25)</h3>
+            <ul>
+                <li>Wrote complex SQL queries involving JOINs, subqueries, and aggregations.</li> 
+                <li>Practiced filtering, grouping, and ordering data for analytics.</li>
+                <li>Gained ability to query relational databases effectively.</li>
+            </ul>
+            <a href="https://www.hackerrank.com/certificates/c1287a064c92" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Scientific Computing with Python – freeCodeCamp (Jan '25)</h3>
+            <ul>
+                <li>Mastered NumPy for matrix manipulation and numerical computing.</li> 
+                <li>Built reusable Python functions for scientific workflows.</li>
+                <li>Practiced real-world scientific problem-solving using modular code.</li>
+            </ul>
+            <a href="https://www.freecodecamp.org/certification/Vijaya06/scientific-computing-with-python-v7" target="_blank" class="view-btn">View Certificate</a>
+        </div>    
+    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-cards">
+        
+        <div class="project-card">
+        <h3>🩺 Medicare Appointment Booking System</h3>
+        <!--<img src="images/medicare-screenshot.png" alt="Medicare App Screenshot" class="project-img">-->
+        <p><strong>Tech Stack:</strong>
+        <span class="badge">Django</span>
+        <span class="badge">SQLite</span>
+        <span class="badge">Bootstrap</span>
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        </p>
+        <ul>
+        <li>Role-based authentication for doctors and patients with secure login</li>
+        <li>Dynamic doctor filtering based on specialty; CRUD operations with validations</li>
+        <li>Responsive UI with status tracking (Pending / Approved / Rejected)</li>
+        <li>Integrated admin features and appointment rescheduling logic</li>
+        </ul>
+        <p>
+        🔗 <a href="https://medicareapp-1-qs13.onrender.com/" target="_blank">Live Demo</a> | 
+        <a href="https://github.com/vijaya-chintapalli/MedicareApp" target="_blank">GitHub</a>
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>🧩 Sudoku Solver</h3>
+        <!--<img src="images/sudoku-screenshot.png" alt="Sudoku Solver Screenshot" class="project-img"> -->
+        <p><strong>Tech Stack:</strong>
+        <span class="badge">Java</span>
+        <span class="badge">Swing</span>
+        <span class="badge">OOP</span>
+        </p>
+        <ul>
+        <li>Built a desktop GUI using Java Swing with real-time puzzle validation</li>
+        <li>Implemented backtracking algorithm to solve puzzles dynamically</li>
+        <li>Features include reset, shortcut keys, and error highlighting</li>
+        <li>Demonstrates problem-solving, algorithm design, and OOP principles</li>
+        </ul>
+        <p>
+        🔗 <a href="https://github.com/vijaya-chintapalli/Sudoku-Solver" target="_blank">GitHub</a>
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>💻 Online Code Evaluator</h3>
+       <!--<img src="images/code-evaluator-screenshot.png" alt="Online Code Evaluator Screenshot" class="project-img">-->
+        <p><strong>Tech Stack:</strong>
+        <span class="badge">React</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Java</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">CodeMirror</span>
+        </p>
+        <ul>
+        <li>Developed a secure online judge that compiles and runs Java code in real time</li>
+        <li>Code editor supports syntax highlighting, custom input, and error logs</li>
+        <li>Backend uses sandboxed Java compilation, secure API, and database storage</li>
+        <li>Highlights knowledge of full-stack development, API integration, and security</li>
+        </ul>
+        <p>
+        🔗 <a href="https://github.com/vijaya-chintapalli/OnlineCodeEvaluator" target="_blank">GitHub</a>
+        </p>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> <a href="mailto:chintapallivijayalakshmi06@gmail.com">Email</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vijaya-lakshmi-chintapalli-475252217/" target="_blank">LinkedIn</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/vijaya-chintapalli" target="_blank">GitHub</a></li>
+        <li><i class="fas fa-code"></i> <a href="https://leetcode.com/u/Vijaya-06/" target="_blank">LeetCode</a></li>
+        <li><i class="fab fa-hackerrank"></i> <a href="https://www.hackerrank.com/profile/chintapallivija1" target="_blank">HackerRank</a></li>
+        <li><i class="fas fa-code"></i> <a href="https://www.techgig.com/myprofile" target="_blank">TechGig</a></li>
+        <li><i class="fas fa-phone"></i> (724) 202-4902</li>
     </ul>
-  </div>
-
-  <div class="job">
-    <h3>IT Intern – Crestsoft Inc</h3>
-    <p><em>Sep 2024 – Dec 2024</em></p>
-    <ul>
-      <li>Contributed to React front-end components and Spring Boot APIs</li>
-      <li>Helped with SQL optimization, deployment using Docker</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <h3>Software Engineer – Mphasis</h3>
-    <p><em>Jul 2021 – Jul 2023</em></p>
-    <ul>
-      <li>Built microservices in Java, integrated JWT and OAuth for secure APIs</li>
-      <li>Used React for UI development and Docker/Jenkins for CI/CD</li>
-    </ul>
-  </div>
-</section>
-
-
-<section id="certifications" class="container">
-  <h2>Certifications</h2>
-  <ul class="cert-list">
-
-    <li><strong>Credly</strong></li>
-    <ul>
-      <li><a href="https://www.credly.com/badges/71b0f787-a55f-4fd8-88ef-6ea4943a2613/linked_in?t=st0otn" target="_blank">Generative AI - AWS Educate</a></li>
-      <li><a href="https://www.credly.com/earner/earned/badge/9f4fcc00-4f1e-43b2-9349-c6f8f0a767c8" target="_blank">Cloud Computing 101 - AWS Educate</a></li>
-      <li><a href="https://www.credly.com/badges/f350bd59-562c-4077-87f9-7f691dd2952c" target="_blank">Software Engineer - HackerRank</a></li>
-    </ul>
-
-    <li><strong>Coursera</strong></li>
-    <ul>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/KCKYLAPBTLJQ" target="_blank">Data Science Methodology - IBM</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/CETAXDGNEAFX" target="_blank">Python Data Structures</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/9LLTZJNUTYZ8" target="_blank">Programming for Everybody</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/WE5HMVXBUP26" target="_blank">Databricks Fundamentals</a></li>
-    </ul>
-
-    <li><strong>Databricks</strong></li>
-    <ul>
-      <li><a href="https://credentials.databricks.com/0098f5e7-9d3c-4087-877f-53c40d84a45c#acc.6sTNiLkC" target="_blank">Databricks Lakehouse Fundamentals</a></li>
-      <li><a href="https://credentials.databricks.com/1f830a43-3a73-4388-9b96-46591db5a225#acc.9BRi2cQZ" target="_blank">Generative AI Fundamentals</a></li>
-    </ul>
-
-    <li><strong>Google Cloud Skills Boost</strong></li>
-    <ul>
-      <li><a href="https://www.cloudskillsboost.google/public_profiles/686b4567-7d10-4752-8494-5d8df7b93b41/badges/14336966" target="_blank">Introduction to Generative AI</a></li>
-      <li><a href="https://www.cloudskillsboost.google/public_profiles/686b4567-7d10-4752-8494-5d8df7b93b41/badges/14337054" target="_blank">Introduction to Large Language Models</a></li>
-      <li><a href="https://www.cloudskillsboost.google/public_profiles/686b4567-7d10-4752-8494-5d8df7b93b41/badges/14337271" target="_blank">Responsible AI</a></li>
-    </ul>
-
-    <li><strong>HackerRank</strong></li>
-    <ul>
-      <li><a href="https://www.hackerrank.com/certificates/8551fe57213a" target="_blank">Java (Basic)</a></li>
-      <li><a href="https://www.hackerrank.com/certificates/9f93daef6b0e" target="_blank">SQL (Basic)</a></li>
-      <li><a href="https://www.hackerrank.com/certificates/c1287a064c92" target="_blank">Problem Solving (Basic)</a></li>
-    </ul>
-
-    <li><strong>freeCodeCamp</strong></li>
-    <ul>
-      <li><a href="https://www.freecodecamp.org/certification/Vijaya06/scientific-computing-with-python-v7" target="_blank">Scientific Computing with Python</a></li>
-    </ul>
-
-  </ul>
-</section>
-
-<section id="contact" class="container">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:chintapallivijayalakshmi06@gmail.com">chintapallivijayalakshmi06@gmail.com</a></p>
-  <p>LinkedIn: <a href="#">https://www.linkedin.com/in/vijaya-lakshmi-chintapalli-475252217/</a></p>
-  <p>GitHub: <a href="#">https://github.com/vijaya-chintapalli</a></p>
-  <p>LeetCode: <a href="#">https://leetcode.com/u/Vijaya-06/</a></p>
-  <p>HackerRank: <a href="#">https://www.hackerrank.com/profile/chintapallivija1</a></p>
-  <p>HackerRank: <a href="#">https://www.hackerrank.com/profile/chintapallivija1</a></p>
-  <p>TechGig: <a href="#">https://www.techgig.com/myprofile</a></p>  
-  <p>Phone: (724) 202-4902</p>
-</section>
-
-<section id="contact" class="container">
-  <h2>Contact</h2>
-
-  <ul class="contact-list">
-    <li><i class="fas fa-envelope"></i> <a href="mailto:chintapallivijayalakshmi06@gmail.com">Email</a></li>
-    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vijaya-lakshmi-chintapalli-475252217/" target="_blank">LinkedIn</a></li>
-    <li><i class="fab fa-github"></i> <a href="https://github.com/vijaya-chintapalli" target="_blank">GitHub</a></li>
-    <li><i class="fas fa-code"></i> <a href="https://leetcode.com/u/Vijaya-06/" target="_blank">LeetCode</a></li>
-    <li><i class="fab fa-hackerrank"></i> <a href="https://www.hackerrank.com/profile/chintapallivija1" target="_blank">HackerRank</a></li>
-    <li><i class="fab fa-TechGig"></i> <a href="https://www.techgig.com/myprofile" target="_blank">TechGig</a></li>
-    <li><i class="fas fa-phone"></i> (724) 202-4902</li>
-  </ul>
-</section>
-
-
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Vijaya Lakshmi Chintapalli. All rights reserved.</p>
-  </div>
-</footer>
-
-
+    </section>
+</main>
+<!-- FontAwesome CDN for icons (optional, include if you use the icons) -->
+<script src="https://kit.fontawesome.com/40f4d28017.js" crossorigin="anonymous"></script>
+</body>
+</html>
