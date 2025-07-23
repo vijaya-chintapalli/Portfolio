@@ -24,6 +24,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#certificates">Certificates</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#challenges">Technical Challenges</a></li>
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="Resume.pdf" class="resume-btn" download>Resume</a></li>
@@ -68,11 +69,16 @@
     <h2>Education</h2>
     <div class="education-cards">
         <div class="education-card">
-        <h3>Master of Science in Computer Science</h3>
-        <p><span class="school">Youngstown State University,</span><br>
-            Youngstown, OH <span class="years">(Aug 2023 - Dec 2024)</span>
-        </p>
-          <ul class="custom-bullets">
+
+            <div class="education-row">
+            <h3>Master of Science in Computer Science</h3>
+            <span>Aug 2023 – Dec 2024</span>
+            </div>
+            <div class="education-row">
+            <h4>Youngstown State University</h4>
+            <span>Youngstown, OH</span>
+            </div>
+            <ul class="custom-bullets">
             <li>Proficient in Python, Java, C++, and JavaScript.</li>
             <li>Built full-stack web apps using Django, React, HTML/CSS.</li>     
             <li>Strong foundation in Data Structures, Algorithms, and OOP.</li>
@@ -80,14 +86,19 @@
             <li>Learned Software Engineering, Agile, and Git workflows.</li>
             <li>Studied AI, Machine Learning, and Cloud Computing (AWS).</li>
             <li>Relevant Courses: Web Development,Advanced Algorithms, DBMS, Database Systems, OS, AI & Machine Learning, Networking, Data Structures, Database Management.</li>
-          </ul>        
+            </ul>        
         <p class="edu-grade">GPA: 3.9 / 4.0</p>
         </div>
+
         <div class="education-card">
+        <div class="education-row">
         <h3>Bachelor of Technology in Information Technology</h3>
-        <p><span class="school">Prakasam Engineering College</span><br>
-            India <span class="years">(Jun 2017 - Jun 2021)</span>
-        </p>
+        <span>Jun 2017 - Jun 2021</span>
+        </div>
+        <div class="education-row">
+        <h4>Prakasam Engineering College</h4>
+        <span>India</span>
+        </div>
         <ul class="custom-bullets">
             <li>Solid foundation in programming (Java, C, C++, Python).</li>
             <li>Built web applications using HTML, CSS, JavaScript, and React.js.</li>
@@ -326,9 +337,9 @@
         <div class="cert-card">
         <h3>Data Science Methodology – IBM &nbsp; | &nbsp; Coursera (Jul '20)</h3>
         <ul class="custom-bullets">
-            <li>Learned the data science lifecycle: problem definition, data collection, modeling, and evaluation</li>
-            <li>Applied CRISP-DM methodology to real-world case studies</li>
-            <li>Practiced defining business goals and converting them into data-driven solutions</li>
+            <li>Learned the data science lifecycle: problem definition, data collection, modeling, and evaluation.</li>
+            <li>Applied CRISP-DM methodology to real-world case studies.</li>
+            <li>Practiced defining business goals and converting them into data-driven solutions.</li>
         </ul>
         <div style="text-align: center; margin-top: 1rem;">
         <a href="https://www.coursera.org/account/accomplishments/verify/KCKYLAPBTLJQ" target="_blank" class="view-btn">View Certificate</a>
@@ -447,7 +458,7 @@
             <ul class="custom-bullets">
                 <li>Proficient in Java programming concepts: OOP, data structures, exception handling.</li> 
                 <li>Implemented coding solutions using Java Collections and Streams.</li>
-                <li>Practiced solving real-world problems in a timed environment</li>
+                <li>Practiced solving real-world problems in a timed environment.</li>
             </ul>
             <div style="text-align: center; margin-top: 1rem;">
             <a href="https://www.hackerrank.com/certificates/8551fe57213a" target="_blank" class="view-btn">View Certificate</a>
@@ -508,18 +519,18 @@
         <span class="badge">CSS </span>
         </p>
         <ul class="custom-bullets">
-        <li>Role-based authentication for doctors and patients with secure login</li>
-        <li>Dynamic doctor filtering based on specialty; CRUD operations with validations</li>
-        <li>Responsive UI with status tracking (Pending / Approved / Rejected)</li>
-        <li>Integrated admin features and appointment rescheduling logic</li>
+        <li>Role-based authentication for doctors and patients with secure login.</li>
+        <li>Dynamic doctor filtering based on specialty; CRUD operations with validations.</li>
+        <li>Responsive UI with status tracking (Pending / Approved / Rejected).</li>
+        <li>Integrated admin features and appointment rescheduling logic.</li>
         </ul>
         <p>
         🔗 <a href="https://medicareapp-1-qs13.onrender.com/" target="_blank">Live Demo</a> | 
         <a href="https://github.com/vijaya-chintapalli/MedicareApp" target="_blank">GitHub</a>
         </p>
-    </div>
+        </div>
 
-    <div class="project-card">
+        <div class="project-card">
         <h3>🧩 Sudoku Solver</h3>
         <!--<img src="images/sudoku-screenshot.png" alt="Sudoku Solver Screenshot" class="project-img"> -->
         <p><strong>Tech Stack:</strong>
@@ -528,17 +539,17 @@
         <span class="badge">OOP </span>
         </p>
         <ul class="custom-bullets">
-        <li>Built a desktop GUI using Java Swing with real-time puzzle validation</li>
-        <li>Implemented backtracking algorithm to solve puzzles dynamically</li>
-        <li>Features include reset, shortcut keys, and error highlighting</li>
-        <li>Demonstrates problem-solving, algorithm design, and OOP principles</li>
+        <li>Built a desktop GUI using Java Swing with real-time puzzle validation.</li>
+        <li>Implemented backtracking algorithm to solve puzzles dynamically.</li>
+        <li>Features include reset, shortcut keys, and error highlighting.</li>
+        <li>Demonstrates problem-solving, algorithm design, and OOP principles.</li>
         </ul>
         <p>
         🔗 <a href="https://github.com/vijaya-chintapalli/Sudoku-Solver" target="_blank">GitHub</a>
         </p>
-    </div>
+        </div>
 
-    <div class="project-card">
+        <div class="project-card">
         <h3>💻 Online Code Evaluator</h3>
        <!--<img src="images/code-evaluator-screenshot.png" alt="Online Code Evaluator Screenshot" class="project-img">-->
         <p><strong>Tech Stack:</strong>
@@ -549,16 +560,87 @@
         <span class="badge">CodeMirror</span>
         </p>
         <ul class="custom-bullets">
-        <li>Developed a secure online judge that compiles and runs Java code in real time</li>
-        <li>Code editor supports syntax highlighting, custom input, and error logs</li>
-        <li>Backend uses sandboxed Java compilation, secure API, and database storage</li>
-        <li>Highlights knowledge of full-stack development, API integration, and security</li>
+        <li>Developed a secure online judge that compiles and runs Java code in real time.</li>
+        <li>Code editor supports syntax highlighting, custom input, and error logs.</li>
+        <li>Backend uses sandboxed Java compilation, secure API, and database storage.</li>
+        <li>Highlights knowledge of full-stack development, API integration, and security.</li>
         </ul>
         <p>
         🔗 <a href="https://github.com/vijaya-chintapalli/OnlineCodeEvaluator" target="_blank">GitHub</a>
         </p>
+        </div>
     </div>
     </section>
+
+    <!-- Technical Challenges Section -->
+  <section class="section challenges" id="challenges" style="animation-delay: 0.4s;">
+  <h2>Technical Challenges Solved</h2>
+  <div class = "challenge-cards">
+    <div class="challenge-card">
+    <h3>Full Stack Software Engineer – Crestsoft Inc.</h3>
+    <span>(Jan 2025 – Present)</span>
+    <ul class="custom-bullets">
+      <li>
+        <strong>Bridged Frontend-Backend Gaps in Complex Applications:</strong> Refactored mismatched API contracts between React.js components and Spring Boot/Python APIs, reducing frontend errors by 40%.
+      </li>
+      <li>
+        <strong>Secured RESTful APIs with Role-Based Access Control (RBAC):</strong> Implemented token-based authentication using JWT and verified user roles at each endpoint in Spring Boot and Flask backends.
+      </li>
+      <li>
+        <strong>Modularized Monolithic Codebases into Microservices:</strong> Refactored legacy monolithic backend into smaller Flask modules using Blueprint architecture, enabling independent testing and deployments.
+      </li>
+      <li>
+        <strong>Automated Containerized Builds for Fast Deployments:</strong> Dockerized full-stack apps and integrated into Linux-based CI/CD pipeline, reducing deployment time from 25 to 8 minutes.
+      </li>
+      <li>
+        <strong>Mentored Interns While Maintaining Clean Git Flow:</strong> Led code reviews and enforced Git workflows (feature branching + PR reviews) for better collaboration and code quality.
+      </li>
+    </ul>
+    </div>
+
+    <div class="challenge-card">
+    <h3>IT Intern – Crestsoft Inc. </h3>
+        <span>Sep 2024 – Dec 2024</span>
+    <ul class="custom-bullets">
+      <li>
+        <strong>Debugged Real-World Bugs Using Agile Sprint Cycles:</strong> Traced front-end logic errors and backend 500s using browser dev tools and logs; wrote fixes under mentorship using core CS principles.
+      </li>
+      <li>
+        <strong>Standardized Database Queries to Improve Consistency:</strong> Converted scattered raw SQL into parameterized reusable functions for MySQL, enhancing backend maintainability and security.
+      </li>
+      <li>
+        <strong>Participated in Sprint Planning with Dev Teams:</strong> Collaborated on Jira tickets, clarified feature requirements, and contributed working code in bi-weekly sprint demos.
+      </li>
+    </ul>
+    </div>
+
+    <div class="challenge-card">
+    <h3>Software Engineer – Mphasis</h3>
+    <span>Jul 2021 – Jul 2023</span>
+    <ul class="custom-bullets">
+      <li>
+        <strong>Scaled Backend Services to Handle High Throughput:</strong> Rewrote service handlers in Spring Boot to use asynchronous processing for large request volumes, reducing server response time.
+      </li>
+      <li>
+        <strong>Integrated Frontend Apps with Secure Auth Flows:</strong> Added JWT/OAuth 2.0 based login flows in React.js + Express.js stack for secure user sessions across multiple modules.
+      </li>
+      <li>
+        <strong>Built Reusable Components for React Frontends:</strong> Designed and documented component library with prop-driven layouts to standardize frontend across multiple internal tools.
+      </li>
+      <li>
+        <strong>Resolved CI/CD Build Failures Across Jenkins Pipelines:</strong> Debugged Jenkins build breakages caused by version mismatches, Dockerfile bugs, or misconfigured env vars—reduced build error rate by 60%.
+      </li>
+      <li>
+        <strong>Balanced SQL & NoSQL for Performance Optimization:</strong> Used PostgreSQL for structured transactional data and MongoDB for unstructured logs, increasing query speed while reducing load.
+      </li>
+      <li>
+        <strong>Handled On-Call Production Bug Fixes:</strong> Quickly triaged and resolved backend crashes or API failures during on-call support, often writing hotfixes and root-cause documentation.
+      </li>
+    </ul>
+    </div>
+    </div>
+</section>
+
 
     <!-- Leadership Section -->
 
