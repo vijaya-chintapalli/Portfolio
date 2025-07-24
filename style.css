@@ -300,7 +300,6 @@ font-weight: bold;
   box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
 }
 
-
 .about-content.centered {
  display: flex;
  flex-direction: column;
@@ -309,15 +308,13 @@ font-weight: bold;
  text-align: center;
 }
 
-
-
 .hero h1 {
  text-align: center;
  color: var(--highlight);
  font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
  font-size: 2.1rem;
  letter-spacing: 1px;
- margin-bottom: 2rem;
+ margin-bottom: 1.5rem;
 }
 
 h3 {
