@@ -15,9 +15,8 @@
 /* Full-page layout with centered content */
 /* Full-page layout with centered content */
 body {
-  background: linear-gradient(150deg, #0a0e23 0%, #1e293b 100%);
+  background: linear-gradient(145deg, #0f0f1a, #1a1a2e);                    /*linear-gradient(150deg, #0a0e23 0%, #1e293b 100%);*/
   box-shadow: 0 0 10px #01182a, 0 0 20px #00FF99;
-
   color: var(--text-light);
   font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
   margin: 25px;
@@ -28,8 +27,13 @@ body {
   overflow-x: hidden;        /* Prevent horizontal scroll */
   scroll-behavior: smooth;   /* Smooth scrolling for anchor links */  
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  animation: gradientBG 20s ease infinite;
 }
+
+
+
+
+
 @keyframes gradientBG {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
@@ -292,7 +296,7 @@ font-weight: bold;
  object-fit: cover;
  border-radius: 12px;
  border: 4px solid var(--accent-wine);
- margin-top: 4rem;
+ margin-top: 3rem;
  box-shadow: 0 0 25px rgba(255, 215, 0, 0.25); /* yellowish glow */
  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -450,14 +454,19 @@ font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
 .challenge-card:hover,
 .leadership-card:hover
 {
-  box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+  box-shadow: 0 0 35px rgba(0, 123, 255, 0.8), 0 0 15px rgba(139, 0, 93, 0.5);                  /*0 0 20px rgba(0, 123, 255, 0.6);*/
   
   border: mediumaquamarine 4px solid;
  
   /*border: #8b005d 4px solid; */
-  transform: scale(1.05);  
+  transform: scale(1.06);  
   animation: flashGlowHover 2.5s ease-in-out infinite;
 }
+
+
+
+
+
 
 
 /* ✨ Highlight headers in yellow */
@@ -743,7 +752,7 @@ font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
 .contact-links-col a:hover,
 .contact-links-col span:hover {
   color: var(--highlight);
-  text-shadow: 0 0 6px var(--highlight);
+  text-shadow: 0 0 10px var(--highlight);
 }
 
 .contact-form  {
@@ -802,9 +811,10 @@ font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--accent-wine);
-  border-radius: 7px;
+  border-width: 4px;
   box-shadow: linear-gradient(120deg, var(--accent-purple), var(--highlight), var(--accent-wine));
   background: var(--card-dark); 
+  
 }
 
 
@@ -819,6 +829,7 @@ font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
   font-weight: 600;
   cursor: pointer;
   box-shadow: mediumaquamarine;
+  text-shadow: 0 0 6px mediumaquamarine;
   margin-top: 1rem;
   transition: background 0.2s, color 0.2s;
 }
@@ -829,6 +840,8 @@ font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
   color: #fff;
   
 }
+
+
 
 
 .section {
