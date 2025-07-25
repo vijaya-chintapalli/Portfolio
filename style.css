@@ -286,9 +286,8 @@ font-weight: bold;
  height: 320px;
  object-fit: cover;
  border-radius: 12px;
- 
  border: 4px solid var(--accent-wine);
- margin-top: 0rem;
+ margin-top: 3rem;
  box-shadow: 0 0 25px rgba(255, 215, 0, 0.25); /* yellowish glow */
  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -306,8 +305,6 @@ font-weight: bold;
  text-align: center;
 }
 
-
-
 .hero h1 {
  text-align: center;
  color: var(--highlight);
@@ -315,6 +312,7 @@ font-weight: bold;
  font-size: 2.1rem;
  letter-spacing: 1px;
  margin-bottom: 1rem;
+ margin-top: 0.5rem;
 }
 
 h3 {
