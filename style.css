@@ -183,8 +183,9 @@ section {
   border-bottom: 2px solid var(--accent-purple);
   background-color: var(--card-dark);
   font-weight: bold;
+  padding: 0.6rem 1.5rem;
   display: flex;
-  padding: 1rem 2rem;
+  /*padding: 1rem 2rem;*/
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -194,6 +195,7 @@ section {
  font-size: 2rem;
  font-weight: bold;
  color: var(--highlight);
+ /*font-size: 1.6rem;*/
 }
 .nav-links {
  display: flex;
@@ -206,9 +208,10 @@ section {
  color: #fff;
  font-weight: 400;
  text-decoration: none;
- font-size: 1em;
+ /*font-size: 1em;*/
  position: relative;
  transition: color 0.24s;
+ font-size: 0.95em;
 }
 .nav-links a:hover,
 .nav-links a:focus {
@@ -288,8 +291,9 @@ font-weight: bold;
  height: 320px;
  object-fit: cover;
  border-radius: 12px;
+ 
  border: 4px solid var(--accent-wine);
- margin-top: 3rem;
+ margin-top: 0rem;
  box-shadow: 0 0 25px rgba(255, 215, 0, 0.25); /* yellowish glow */
  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
