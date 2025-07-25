@@ -831,7 +831,7 @@ h3 {
   padding: 3rem 1.5rem;
   /*padding: 3rem 1.5rem;*/
   margin-bottom: 3rem;
-  border-bottom: 2px dashed var(--card-dark);
+  border-bottom: 2px strong var(--bg-dark);
   
   transition: margin 0.2s, padding 0.2s;
   padding-bottom: 3rem;
